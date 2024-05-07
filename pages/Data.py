@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib as plt
+
 import altair as alt
+
 st.title("Maternal Mortiality Rate by States")
 state_df = pd.read_csv('Data/maternal-mortality-rate-by-state-2024.csv')
 
