@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib as plt
 import altair as alt
 st.title("Maternal Mortiality Rate by States")
-state_df = pd.read_csv('maternal-mortality-rate-by-state-2024.csv')
+state_df = pd.read_csv('Data/maternal-mortality-rate-by-state-2024.csv')
 
 #remove united states
 state_df.drop(state_df[state_df['state'] == 'United States'].index, inplace = True)
@@ -25,7 +25,7 @@ st.write("Map of Maternal Mortiality Rates for the Current Year 2024")
 st.image('Maternal Deaths.png')
 
 st.title("Maternal Mortiality Rate ")
-state_df = pd.read_csv('MaternalFile.csv')
+state_df = pd.read_csv('Data/MaternalFile.csv')
 #chart
 #st.area_chart('')
 #delete unwanted columns
@@ -44,7 +44,7 @@ chart = alt.Chart(new_df).mark_bar().encode(
     ).properties(width=600, height=400)
 st.altair_chart(chart)
 st.title("Maternal Mortiality Rate by Quarter")
-quarter_df = pd.read_csv('cdc_maternal_mortality_rate_quarterly.csv')
+quarter_df = pd.read_csv('Data/cdc_maternal_mortality_rate_quarterly.csv')
 #remove united states
 
 #print(quarter_df)

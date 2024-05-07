@@ -5,8 +5,8 @@ import streamlit as st
 import pandas as pd
 
 #read data
-mort_df = pd.read_csv('MaternalFile.csv')
-state_df = pd.read_csv('maternal-mortality-rate-by-state-2024.csv')
+mort_df = pd.read_csv('Data/MaternalFile.csv')
+state_df = pd.read_csv('Data/maternal-mortality-rate-by-state-2024.csv')
 
 
 

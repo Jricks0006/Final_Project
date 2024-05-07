@@ -3,7 +3,7 @@
 import streamlit as st
 import pandas as pd
 
-search_df = pd.read_excel('SearchEngine.xlsx')
+search_df = pd.read_excel('Data/SearchEngine.xlsx')
 
 
 # Page setup
