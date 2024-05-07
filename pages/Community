@@ -1,0 +1,14 @@
+import streamlit as st
+import streamlit_wordcloud as WordCloud
+
+import matplotlib.pyplot as plt
+
+st.subheader("World Cloud")
+
+text = st.text_input('Enter text and press enter')
+
+if text:
+    W = WorldCloud().generate(text)
+
+    plt.imshow(W)
+    st.pyplot()
